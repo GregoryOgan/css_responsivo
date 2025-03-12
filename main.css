@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid darkgreen;
+    background-color:green;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header li {
+    display: inline;
+    padding: 0 8px;   
+}
+
+header nav li a {
+    text-decoration: none;
+    font-weight: bolder; 
+    color: #fff;
+}
+
+.container section { 
+    display: flex;
+    margin-top: 32px;
+}
+
+.container section article {
+    margin-left: 16px;
+}
+
+.container section article h2 {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px darkgreen solid;
+}
+
+.produtos section {
+    display: flex;
+    margin-top: 32px;
+    border-bottom: 2px darkgreen solid;
+}
+
+.produtos h2 {
+    padding: 16px 0;
+}
+
+.games {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    column-gap: 3px;
+    row-gap: 3px;
+    
+}
+.game-content {
+    background-color: #ccc;
+}
+
+.game-content h3, p {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.game-content img {
+    width: 100%;
+}
+
+.game-content button {
+    width: 100%;
+    padding: 8px;
+    background-color: green;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+    .games {
+        display: block;
+}
+
+.game-content {
+    margin-bottom: 16px;
+}
+    
+.container {
+    max-width: 90%;
+}
+.container section { 
+    display: block;
+    margin-top: 32px;
+}
+
+.container section article {
+    margin-left: 16px;
+}
+
+.container section article h2 {
+    margin-bottom: 16px;
+    padding-bottom: 0;
+    border-bottom: 2px darkgreen solid;
+}
+
+.produtos section {
+    display: block;
+    margin-top: 32px;
+    border-bottom: 2px darkgreen solid;
+}
+
+header div.container {
+    flex-direction: column;
+}
+
+}
